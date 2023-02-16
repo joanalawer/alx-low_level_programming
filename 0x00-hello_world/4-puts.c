@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - Program using puts() to print a line of text.
+ * main - Entry point
+ * Description - Program uses puts() to print a line of text.
  * return - 0 on success.
  */
 int main(void)
