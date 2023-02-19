@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: Print single digit numbers of base 10, from 0
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -12,5 +12,5 @@ int main(void)
 	{
 		printf(i,"\n");
 	}
-		return 0;
+		return (0);
 }
