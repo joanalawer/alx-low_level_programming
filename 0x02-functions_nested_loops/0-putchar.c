@@ -1,9 +1,10 @@
 #include <main.h>
 /**
  * Description: Program prints _putchar, followed by a new line.
- * Return:
+ * Return: On success (0)
  */
 int _putchar()
 {
-	return _putchar;
+	_putchar("putchar%c\n")
+	return (0);
 }
