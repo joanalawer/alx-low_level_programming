@@ -17,6 +17,7 @@ int main(void)
 	for (lowercase = 'a'; lowercase <= 'f'; lowercase++)
 	{
 		putchar(lowercase);
+	}
 
 	putchar('\n');
 
