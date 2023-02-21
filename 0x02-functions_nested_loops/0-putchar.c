@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char s = "_putchar";
+	char *s = "_putchar";
 	
 	_putchar("%c", s);
 	
