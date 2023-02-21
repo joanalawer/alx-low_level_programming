@@ -5,9 +5,11 @@
  */
 int main(void)
 {
-	char *s = "_putchar";
+	int i;
+	char s[8] = "_putchar";
 	
-	_putchar("%c", s);
+	while(i <= 8)
+		_putchar("%c", s);
 	
 	_putchar('\n');
 
