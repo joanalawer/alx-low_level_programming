@@ -9,9 +9,9 @@ int main(void)
 	int hexa;
 	char lowercase;
 
-	for (hexa = -; hexa <10; hexa++)
+	for (hexa = 0; hexa < 10; hexa++)
 	{
-		putchar((hexa % 10 + '0');
+		putchar((hexa % 10) + '0');
 	}
 
 	for (lowercase = 'a'; lowercase <= 'f'; lowercase++)
