@@ -1,16 +1,19 @@
-#include "main.h"
+#include <stdio.h>
 /**
+ * main - Entry pooint
  * Description: Program prints _putchar, followed by a new line.
  * Return: On success (0)
  */
-
-int _putchar(char)
+int main(void)
 {
-	char str[8] = "_putchar"
-	
-	_putchar(str);
+	char str[8] = "_putchar";
+
+	while (str <= 8)
+	{
+		_putchar(*sh);
+		str++;
+	}
 	_putchar('\n');
 
 	return (0);
 }
-
