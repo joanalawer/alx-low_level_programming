@@ -3,17 +3,14 @@
  * Description: Program prints _putchar, followed by a new line.
  * Return: On success (0)
  */
-int main(void)
+
+int _putchar(char)
 {
-	int i;
-	char s[8] = "_putchar";
+	char str[8] = "_putchar"
 	
-	while(i <= s)
-	{
-		_putchar("%c", s);
-		i++;
-	}
+	_putchar(str);
 	_putchar('\n');
 
 	return (0);
 }
+
