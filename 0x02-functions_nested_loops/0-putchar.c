@@ -8,9 +8,11 @@ int main(void)
 	int i;
 	char s[8] = "_putchar";
 	
-	while(i <= 8)
+	while(i <= s)
+	{
 		_putchar("%c", s);
-	
+		i++;
+	}
 	_putchar('\n');
 
 	return (0);
