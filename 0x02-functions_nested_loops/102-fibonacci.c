@@ -20,8 +20,8 @@ int main(void)
 		if (i < 49)
 		{
 			b += a;
-			a = b -a;
-			printf(",");
+			a = b - a;
+			printf(", ");
 		}
 	}
 
