@@ -13,7 +13,7 @@ int main(void)
 	a = 1;
 	b = 2;
 
-	while (b < 98 )
+	while (b < 98)
 	{
 		printf("%ld", a);
 
@@ -23,9 +23,8 @@ int main(void)
 			a = b - a;
 			printf(", ");
 		}
-		i++;
 	}
-
+	i++;
 	printf("\n");
 
 	return (0);
