@@ -25,7 +25,7 @@ int main(void)
 		i++;
 		printf("%ld", b);
 
-		if (i < 98)
+		if (i < 97)
 		{
 			printf(", ");
 		}
