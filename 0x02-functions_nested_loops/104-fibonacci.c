@@ -19,12 +19,14 @@ int main(void)
 
 		if (i < 97)
 		{
+			i++;
+
 			b += a;
 			a = b - a;
 			printf(", ");
 		}
 	}
-	i++;
+
 	printf("\n");
 
 	return (0);
