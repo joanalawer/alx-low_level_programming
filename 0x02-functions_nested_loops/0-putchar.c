@@ -4,15 +4,11 @@
  * Description: Program prints _putchar, followed by a new line.
  * Return: On success (0)
  */
-int _putchar(char)
+int _putchar(char c)
 {
-	char str[8] = "_putchar";
+	char *c;
 
-	for(i = 0; i <= 8; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
-
+	for (c = "Holberton\n"; *c != '\0'; ++c)
+		_putchar(*c);
 	return (0);
 }
