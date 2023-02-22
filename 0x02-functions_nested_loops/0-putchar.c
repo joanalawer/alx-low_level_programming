@@ -6,9 +6,9 @@
  */
 int _putchar(char c)
 {
-	char *c;
+	char c;
 
-	for (c = "Holberton\n"; *c != '\0'; ++c)
-		_putchar(*c);
+	for (c = "Holberton\n"; c != '\0'; ++c)
+		_putchar(c);
 	return (0);
 }
