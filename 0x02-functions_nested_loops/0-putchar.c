@@ -7,11 +7,11 @@
  */
 int _putchar(char c)
 {
-	char c;
+	char i;
 
-	for (c = "_putchar\n"; c != '\0'; ++c)
+	for (i = "_putchar\n"; i != '\0'; ++i)
 	{
-		_putchar(c);
+		_putchar(i);
 	}
 
 	return (0);
