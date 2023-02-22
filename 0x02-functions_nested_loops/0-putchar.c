@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - Entry pooint
  * Description: Program prints _putchar, followed by a new line.
@@ -6,12 +6,14 @@
  */
 int main(void)
 {
-	char c;
+	int _putchar[8] = "_putchar";
+	int i;
 
-	for (c = "_putchar\n"; c != '\0'; ++c)
-	{
-		printf(c);
-	}
+	while (i < 8)
+		_putchar(i);
+	
+	i++;
+	_putchar('\n')
 
 	return (0);
 }
