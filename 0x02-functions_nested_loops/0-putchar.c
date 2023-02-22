@@ -4,7 +4,7 @@
  * Description: Program prints _putchar, followed by a new line.
  * Return: On success (0)
  */
-int main(void)
+int _putchar(char)
 {
 	char str[8] = "_putchar";
 
