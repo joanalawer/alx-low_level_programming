@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - Entry pooint
  * Description: Program prints _putchar, followed by a new line.
@@ -11,7 +10,7 @@ int main(void)
 
 	for (c = "_putchar\n"; c != '\0'; ++c)
 	{
-		_putchar(c);
+		printf(c);
 	}
 
 	return (0);
