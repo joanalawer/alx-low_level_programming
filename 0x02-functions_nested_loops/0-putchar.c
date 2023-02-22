@@ -10,7 +10,7 @@ int main(void)
 
 	while (str <= 8)
 	{
-		_putchar(*sh);
+		_putchar(str);
 		str++;
 	}
 	_putchar('\n');
