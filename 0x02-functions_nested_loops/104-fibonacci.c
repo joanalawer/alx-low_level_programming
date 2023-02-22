@@ -9,19 +9,23 @@ int main(void)
 	int i;
 	long int a;
 	long int b;
-
+	
 	a = 1;
-	b = 2;
+	b = 1;
+	i = 2;
 
-	while (b < 98)
+	printf("%ld, %ld, ", a, b);
+	
+	while (i < 98)
 	{
-		printf("%ld", a);
+		long int temp = b;
+		b += a;
+		a = temp;
 		i++;
+		printf("%ld", b);
 
-		if (i < 97)
+		if (i < 98)
 		{
-			b += a;
-			a = b - a;
 			printf(", ");
 		}
 	}
