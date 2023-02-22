@@ -12,16 +12,14 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	i = 2;
+	i = 0;
 
 	printf("%ld, %ld, ", a, b);
 
 	while (i < 98)
 	{
-		long int temp = b;
-
 		b += a;
-		a = temp;
+		a = b - a;
 		i++;
 		printf("%ld", b);
 
