@@ -16,11 +16,10 @@ int main(void)
 	while (b < 98)
 	{
 		printf("%ld", a);
+		i++;
 
 		if (i < 97)
 		{
-			i++;
-
 			b += a;
 			a = b - a;
 			printf(", ");
