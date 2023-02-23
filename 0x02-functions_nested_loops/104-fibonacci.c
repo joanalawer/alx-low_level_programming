@@ -10,13 +10,11 @@ int main(void)
 	long int a;
 	long int b;
 
+	i = 0;
 	a = 1;
 	b = 2;
-	i = 0;
 
-	/*printf("%ld", a);*/
-
-	while (i < 98)
+	while (b < 98)
 	{
 		i++;
 		printf("%ld", a);
@@ -24,7 +22,7 @@ int main(void)
 		if (i < 97)
 		{
 			b += a;
-			a = b -a;
+			a = b - a;
 			printf(", ");
 		}
 	}
