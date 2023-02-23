@@ -14,14 +14,14 @@ int main(void)
 	b = 2;
 	i = 0;
 
-	printf("%ld, ", a);
+	/*printf("%ld", a);*/
 
 	while (i < 98)
 	{
 		b += a;
 		a = b - a;
 		i++;
-		printf("%ld", b);
+		printf("%ld", a);
 
 		if (i < 97)
 		{
