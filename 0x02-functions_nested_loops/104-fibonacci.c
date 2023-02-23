@@ -10,13 +10,11 @@ int main(void)
 	long int a;
 	long int b;
 
-	i = 0;
 	a = 1;
 	b = 2;
 
-	while (i < 97)
+	for (i = 0; i < 98; i++)
 	{
-		i++;
 		printf("%ld", a);
 
 		if (i < 97)
