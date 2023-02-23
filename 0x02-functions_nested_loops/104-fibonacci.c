@@ -14,7 +14,7 @@ int main(void)
 	a = 1;
 	b = 2;
 
-	while (a < 98)
+	while (i < 97)
 	{
 		i++;
 		printf("%ld", a);
