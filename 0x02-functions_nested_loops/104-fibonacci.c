@@ -18,13 +18,13 @@ int main(void)
 
 	while (i < 98)
 	{
-		b += a;
-		a = b - a;
 		i++;
 		printf("%ld", a);
 
 		if (i < 97)
 		{
+			b += a;
+			a = b -a;
 			printf(", ");
 		}
 	}
