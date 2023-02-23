@@ -1,5 +1,5 @@
 /**
- * Header file: Contains the prototypes of all functions and the prototype of the function _putchar.
+ * Header file: Contains the prototypes of all functions.
  */
 #ifndef main_h
 #define main_h
@@ -11,4 +11,4 @@ int largest_number(int a, int b, int c);
 int convert_day(int month, int day);
 void print_remaining_days(int month, int day, int year);
 
-#endif
+#endif /* MAIN_H */
