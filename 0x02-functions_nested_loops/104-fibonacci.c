@@ -17,7 +17,7 @@ int main(void)
 	{
 		printf("%ld", a);
 
-		if (i < 97)
+		if (i < 98)
 		{
 			b += a;
 			a = b - a;
