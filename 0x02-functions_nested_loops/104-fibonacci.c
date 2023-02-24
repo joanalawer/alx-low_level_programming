@@ -6,26 +6,44 @@
  */
 int main(void)
 {
-	int num1, num2, i, n;
-	int next_num;
+	int i;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long fib1_x, fib1_y, fib2_x, fib2_y;
+	unsigned long x, y;
 
-	n = 98;
-
-	for (i = 1; i <= n; i++)
+	for (i = 0; i < 92; i++)
 	{
-		if (i == 98)
+		sum = fib1 + fib2;
+		printf("%lu, ", sum);
+
+		fib1 = fib2;
+		fib2 = sum;
+	}
+
+	fib1_x = fib1 / 10000000000;
+	fib2_x = fib2 / 10000000000;
+	fib1_y = fib1 % 10000000000;
+	fib2_y = fib2 % 10000000000;
+
+	for (i = 93; i < 99; i++)
+	{
+		x = fib1_x + fib2_x;
+		y = fib1_y + fib2_y;
+		if (fib1_y + fib2_y > 9999999999)
 		{
-			printf("%d, ", num2);
+			x += 1;
+			y %= 10000000000;
 		}
-		else
-		{
-			printf("%d, ", num2);
-			next_num = num1 + num2;
-			num1 = num2;
-			num2 = next_num;
-		}
+
+		printf("%lu%lu", x, y);
+		if (i != 98)
+			printf(", ");
+
+		fib1_x = fib2_x;
+		fib1_y = fib2_y;
+		fib2_x = x;
+		fib2_y = y;
 	}
 	printf("\n");
-
 	return (0);
 }
