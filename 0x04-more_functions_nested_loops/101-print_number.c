@@ -6,16 +6,26 @@
 */
 void print_number(int n)
 {
-	unsigned int num = n;
+	int p, nb;
 
-	if (n < 0)
+	p = 1;
+	while (n / p >= 10 || n / p <= -10)
+		p *= 10;
+
+	while (p)
 	{
-		_putchar('-');
-		num = -num;
+		nb = n / p;
+		if (nb < 0)
+		{
+			_putchar('-');
+			_putchar('0' - nb);
+			n = -(n - nb * p);
+		}
+		else
+		{
+			_putchar('0' + nb);
+			n = n - nb * p;
+		}
+		p /= 10;
 	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + '0');
 }
