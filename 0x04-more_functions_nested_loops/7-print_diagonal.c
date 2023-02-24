@@ -6,13 +6,14 @@
  */
 void print_diagonal(int n)
 {
-	int c, i;
+	int i;
+	int j;
 
-	c = 0;
+	j = 0;
 
 	while (n > 0)
 	{
-		i = c;
+		i = j;
 		while (i > 0)
 		{
 			_putchar(' ');
@@ -20,9 +21,9 @@ void print_diagonal(int n)
 		}
 		_putchar('\\');
 		_putchar('\n');
-		c++;
+		j++;
 		n--;
 	}
-	if (c < 1)
+	if (j < 1)
 		_putchar('\n');
 }
