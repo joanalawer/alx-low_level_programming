@@ -6,25 +6,25 @@
  */
 int main(void)
 {
-	int i;
-	long int a;
-	long int b;
+	int num1, num2, i, n;
+	int next_num;
 
-	a = 1;
-	b = 2;
+	n = 98;
 
-	for (i = 0; i < 98; i++)
+	for (i = 1; i <= n; i++)
 	{
-		printf("%ld", a);
-
-		if (i < 98)
+		if (i == 98)
 		{
-			b += a;
-			a = b - a;
-			printf(", ");
+			printf("%d, ", num2);
+		}
+		else
+		{
+			printf("%d, ", num2);
+			next_num = num1 + num2;
+			num1 = num2;
+			num2 = next_num;
 		}
 	}
-
 	printf("\n");
 
 	return (0);
