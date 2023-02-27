@@ -11,12 +11,12 @@ void puts_half(char *str)
 	int n;
 
 	n = 0;
-	
+
 	for (i = 0; str[i] != 0; i++)
 	{
 		n++;
 	}
-	
+
 	j = (n / 2);
 
 	if ((n % 2) == 1)
