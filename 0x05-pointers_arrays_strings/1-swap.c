@@ -5,8 +5,11 @@
  * @b: Another integer with value to be swapped
  * Return: void
  */
-void swap_int(int *s, int *b)
+void swap_int(int *a, int *b)
 {
-	*s == b;
-	*b == s;
+	int n;
+
+	n = a*;
+	*a = *b;
+	*b = n;
 }
