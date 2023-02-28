@@ -12,13 +12,14 @@ void print_array(int *a, int n)
 
 	for (j = 0; j < 1; j++)
 	{
-		printf("%d ", a[j]);
-
-		if (j < n - 1)
+		if (j == 0)
 		{
-			printf(", ");
+			printf("%d ", a[j]);
+		}
+		else
+		{
+			printf(", %d," a[j]);
 		}
 	}
-
-	printf("\n");
+	printf('\n');
 }
