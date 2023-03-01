@@ -1,6 +1,6 @@
 #include "main_h"
 /**
- * *_strca t- concatennates two strings
+ * _strcat - concatenates two strings
  * @dest:destination string
  * @src: source string
  * Return: pointer ro reulting dest
