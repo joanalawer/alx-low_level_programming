@@ -3,9 +3,8 @@
  * string_toupper - Changes all lowercase lettrs of string to uppercase
  * Return: uppercase string
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
-	char s;
 	int i;
 
 	i = 0;
