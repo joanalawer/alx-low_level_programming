@@ -4,29 +4,25 @@
  * @dest: string destination
  * @src: string source
  * @n: number of bytes
- * Return: Resulting string destination
+ * Return: pointer to dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int j;
+	int index_01 = 0;
+	int index_02 = 0;
 
-	i = 0;
-	while (dest[i] != \'0')
+	while (dest[index_01] != '\0')
 	{
-		i++;
+		index_01++;
 	}
 
-	j = 0;
-
-	while (j < n && src[j] != '\0')
+	while (index_02 < n && src[index_02] != '\0')
 	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
+		dest[index_01 + index_02] = src[index_02];
+		index_02++;
 
-	dest[i] = '\0';
+	}
+	dest[index_01 + index_02] = '\0';
 
 	return (dest);
 }
