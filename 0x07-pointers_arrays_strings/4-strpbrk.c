@@ -15,16 +15,18 @@ char *_strpbrk(char *s, char *accept)
 
 	while (s[i] != '\0')
 	{
+		j = 0;
+
 		while (accept[j] != '\0')
 		{
 			if (s[i] == accept[j])
 			{
-				return (s + i);
+				return ((s + i));
 			}
 			j++;
 		}
 		i++;
 	}
 
-	return (0);
+	return (NULL);
 }
