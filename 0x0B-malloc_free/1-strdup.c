@@ -11,19 +11,27 @@ char *_strdup(char *str)
 	char *s;
 
 	if (str == NULL)
+	{
 		return (NULL);
+	}
 
 	for (j = 0; j <= *str; j++)
 	{
+		s[j] = str[j];
 	}
 
 	j += 1;
 	s = malloc(sizeof(char) * j);
 
 	for (i = 0; i < j; i++)
+	{
 		s[i] = str[i];
+	}
 
 	if (s == NULL)
+	{
 		return (NULL);
+	}
+
 	return (s);
 }
