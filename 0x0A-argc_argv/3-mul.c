@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		for (i = 1; i < argc; i++)
+		for (i = 0; i < argc; i++)
 		{
 			product = atoi(argv[1]) * atoi(argv[2]);
 		}
