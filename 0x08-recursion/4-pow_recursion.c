@@ -7,13 +7,15 @@
  */
 int _pow_recursion(int x, int y)
 {
+	/* int result = _pow_recursion(x * x); */
+
 	if (y == 0)
 	{
 		return (1);
 	}
 	else if (y < 0)
 	{
-		return (1 / (_pow_recursion(x * x)));
+		return (_pow_recursion(x * x));
 		y = y + 1;
 	}
 	else
