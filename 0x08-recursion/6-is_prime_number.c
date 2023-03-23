@@ -6,15 +6,18 @@
  */
 int is_prime_number(int n)
 {
-	int x;
-	if (n <= 0)
+	int x = 2;
+
+	if (n <= 1)
 	{
 		return (0);
 	}
-	else
+	else if (n >= 2 && n <= 3)
 	{
-		return (prime_check(n, x));
+		return (1);
 	}
+
+	return (prime_check(n, x));
 }
 
 /**
@@ -25,13 +28,14 @@ int is_prime_number(int n)
  */
 int prime_check(int num, int x)
 {
-	if ((num / x) == 1 || (num / x) == num)
-	{
-		return (1);
-	}
-	else
+	if (num % div == 0)
 	{
 		return (0);
 	}
-	return (prime_check(num, x));
+	else if (x == num / 2)
+	{
+		return (1);
+	}
+
+	return (prime_check(num, x + 1));
 }
