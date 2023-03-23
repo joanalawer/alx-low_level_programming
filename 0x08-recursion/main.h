@@ -10,3 +10,4 @@ int sqrt_funx(int num, int sqt);
 int prime_check(int num, int x);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
+int check_str(char *s, int i, int j);
