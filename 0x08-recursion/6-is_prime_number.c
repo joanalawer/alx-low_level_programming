@@ -28,7 +28,7 @@ int is_prime_number(int n)
  */
 int prime_check(int num, int x)
 {
-	if (num % div == 0)
+	if (num % x == 0)
 	{
 		return (0);
 	}
