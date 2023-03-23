@@ -48,7 +48,7 @@ int check_str(char *s, int i, int j)
 	{
 		if (i == j || i == j + 1)
 			return (1);
-		return (0 + check(s, i + 1, j - 1));
+		return (0 + check_str(s, i + 1, j - 1));
 	}
 	return (0);
 }
