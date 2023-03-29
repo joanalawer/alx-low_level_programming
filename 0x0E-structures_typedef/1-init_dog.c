@@ -1,19 +1,12 @@
-/**
- * ALX Project 0x0E by Julien Bardier
- * Solution Repo by: Joana Lawer
- */
-
 #include <stdio.h>
 #include "dog.h"
 
 /**
- * init_dog - Function initializes a variable of type struct dog
- * @dog: name for struct type
+ * init_dog - Initializes a variable of type struct dog
  * @d: pointer for struct type
  * @name: pointer to element name
  * @age: element age
- * @owner: pointer to elemnet owner
- * Return : void
+ * @owner: pointer to element owner
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
