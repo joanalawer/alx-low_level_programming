@@ -1,11 +1,12 @@
-/* ALX Project 0x0E by Julien Bardier
+/**
+ * ALX Project 0x0E by Julien Bardier
  * Solution Repo by: Joana Lawer
  */
 
 #include <stdio.h>
 #include "dog.h"
 
-/*
+/**
  * init_dog - Function initializes a variable of type struct dog
  * @dog: name for struct type
  * @d: pointer for struct type
