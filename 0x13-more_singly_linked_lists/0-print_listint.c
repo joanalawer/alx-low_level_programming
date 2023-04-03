@@ -13,14 +13,11 @@ size_t print_listint(const listint_t *h)
 	/* initialize counter for nodes */
 	size_t node_count = 0;
 
-	/* check if node pointing to NULL */
+	/* check if node not pointing to NULL */
 	while (h != NULL)
 	{
-		printf("[%d]", h->n);
-
-		h = h->next;
-
 		node_count++;
+		h = h->next;
 	}
 
 	return (node_count);
