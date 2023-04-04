@@ -13,7 +13,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	/* Declare a new node to add at end*/
 	listint_t *newNode = malloc(sizeof(listint_t));
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> cb36b053e3a2ef9a2059b7a68ab44fbb74fa547e
 	/* Assign data to node */
 	newNode->n = n;
 
@@ -28,7 +32,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	else
 	{
 		/* Declare a temporal pointer to traverse*/
+<<<<<<< HEAD
 		listint_t *temp = malloc(sizeof(listint_t));
+=======
+	       	listint_t *temp = malloc(sizeof(listint_t));
+>>>>>>> cb36b053e3a2ef9a2059b7a68ab44fbb74fa547e
 
 		/*Iterate list to find last node */
 		temp = *head;
@@ -37,7 +45,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		{
 			temp = temp->next;
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> cb36b053e3a2ef9a2059b7a68ab44fbb74fa547e
 		temp->next = newNode;
 	}
 
