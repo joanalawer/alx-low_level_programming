@@ -10,20 +10,12 @@
 void free_listint(listint_t *head)
 {
 	/* Declare a temporal node for list */
-	listint_t *temp = malloc(sizeof(listint_t));
-	/* Assign temp node to head */
-	temp = head;
+	listint_t *temp = head;
 
-	while (head != NULL)
+	while (head)
 	{
-		temp = head->next;
-
-		free(head);
-
-		head = temp;
+		head = head->next;
+		free(temp);
+		temp = head;
 	}
-
-	head = NULL;
-
-	return;
 }
