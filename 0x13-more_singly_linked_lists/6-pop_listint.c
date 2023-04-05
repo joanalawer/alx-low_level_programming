@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	listint_t *headNode;
 	int data;
 
-        headNode = *head;
+	headNode = *head;
 
 	/* Base case */
 	if (*head == NULL)
@@ -27,7 +27,7 @@ int pop_listint(listint_t **head)
 	*head = (*head)->next;
 
 	/* Free head node */
-        free(headNode);
+	free(headNode);
 
 	return (data);
 }
