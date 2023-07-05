@@ -10,6 +10,9 @@
  */
 void free_listint2(listint_t **head)
 {
+	if (head == NULL)
+		return;
+
 	/* Declare a temporal node for list */
 	listint_t *temp = *head;
 	listint_t *next;
