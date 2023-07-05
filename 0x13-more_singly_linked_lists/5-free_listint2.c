@@ -12,14 +12,14 @@ void free_listint2(listint_t **head)
 {
 	/* Declare a temporal node for list */
 	listint_t *temp = *head;
+	listint_t *next;
 
 	while (temp != *head)
 	{
 		next = (*head)->next;
+		free(temp);
 		temp = next;
 	}
-	free(temp);
-
 	*head = NULL;
 }
 
