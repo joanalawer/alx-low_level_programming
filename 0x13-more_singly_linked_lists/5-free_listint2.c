@@ -13,10 +13,10 @@ void free_listint2(listint_t **head)
 	/* Declare a temporal node for list */
 	listint_t *temp = *head;
 
-	while (*head)
+	while (temp != *head)
 	{
-		*head = (*head)->next;
-		temp = *head;
+		next = (*head)->next;
+		temp = next;
 	}
 	free(temp);
 
