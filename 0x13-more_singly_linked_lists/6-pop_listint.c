@@ -14,20 +14,15 @@ int pop_listint(listint_t **head)
 	listint_t *headNode;
 	int data;
 
-	headNode = *head;
-
-	/* Base case */
-	if (*head == NULL)
+	if (!head || !*head)
 	{
-		return (-1);
+		return (0);
 	}
 
-	data = headNode->n;
-
-	*head = (*head)->next;
-
-	/* Free head node */
-	free(headNode);
+	data = (*head)->n;
+	headNode = (*head)->next;
+	free(*head);
+	*head = headNode;
 
 	return (data);
 }
