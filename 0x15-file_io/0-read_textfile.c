@@ -5,8 +5,8 @@
 /**
  * read_textfile - Function reads a text and prints it to
  * the POSIX standard output.
- * filename: Pointer to text file to read
- * letters: Number of letters it should read and print
+ * @filename: Pointer to text file to read
+ * @letters: Number of letters it should read and print
  *
  * Return: 0 if filename is NULL or write fails or
  * does not write the expected amount of bytes
@@ -14,10 +14,11 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t file, o, w;
+	ssize_t o, w, text_file;
 	char *buffer;
 
 	buffer = malloc(letters);
+
 	if (buffer == NULL)
 		return (0);
 
